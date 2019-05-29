@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:weightSum="20"
+    >
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_user_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:background="@drawable/custom_circle_grey"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="14"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="0dp">
+
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="content"
+            android:background="@drawable/custom_text_message"
+            android:textColor="#000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txt_my_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/custom_circle"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

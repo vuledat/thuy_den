@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "1010480018829",
+    "firebase_url": "https://datvl-ad152.firebaseio.com",
+    "project_id": "datvl-ad152",
+    "storage_bucket": "datvl-ad152.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010480018829:android:6a9c8032c1961ef9",
+        "android_client_info": {
+          "package_name": "com.datvl.english"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010480018829-d2hq22oh4qb3t0v88rtd7gefkm2pmdn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datvl.english",
+            "certificate_hash": "7da01a4bad7d44b734a6f083622565f5531e1954"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCslZlyNHTCvkeQ77EEioTvQ-KiMkrHx70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010480018829-pmmvu96s46dnsnje9lrqr4edgqsoqqbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

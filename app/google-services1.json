@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "55913016109",
+    "firebase_url": "https://trotot-6e7fd.firebaseio.com",
+    "project_id": "trotot-6e7fd",
+    "storage_bucket": "trotot-6e7fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55913016109:android:6a9c8032c1961ef9",
+        "android_client_info": {
+          "package_name": "com.datvl.trotot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiBKh3dkP_apfSqFUhxLz-xkFEhyzeZDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55913016109-ijo1jst2qua22she1qjebn6m2f5omel3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
