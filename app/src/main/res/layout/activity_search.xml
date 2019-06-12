@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
+        android:id="@+id/content_fragmnt_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -23,12 +24,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:background="@drawable/template_edit_text_border"
-                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawableLeft="@drawable/ic_save_red_24dp"
                 android:hint="Search"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:textSize="14sp"
-                android:drawableRight="@drawable/ic_keyboard_voice_red_24dp"/>
+                android:gravity="center"
+                android:drawableRight="@drawable/ic_search_black_24dp"/>
 
         </LinearLayout>
 
@@ -40,6 +42,22 @@
             />
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarSearch"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
 </android.support.constraint.ConstraintLayout>

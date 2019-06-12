@@ -7,10 +7,18 @@
     android:layout_height="match_parent"
     android:paddingTop="5dp">
 
-    <include android:id="@+id/mojo_introduction_head"
+    <LinearLayout
+        android:id="@+id/post_in_chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        layout="@layout/item_home"/>
+        tools:ignore="MissingConstraints">
+        <include
+            android:id="@+id/mojo_introduction_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/item_home"/>
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_message_view"
@@ -21,7 +29,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/mojo_introduction_head"
+        app:layout_constraintTop_toTopOf="@+id/post_in_chat"
         app:layout_constraintVertical_bias="1.0" />
 
 

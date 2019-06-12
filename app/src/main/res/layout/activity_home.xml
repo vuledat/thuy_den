@@ -12,107 +12,64 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="647dp">
 
-        <TextView
-            android:id="@+id/score"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="10"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColor="@color/colorRed"
-            />
-
-        <LinearLayout
+            android:weightSum="3"
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2">
-
-            <LinearLayout
-                android:layout_height="wrap_content"
+            android:background="@drawable/template_edit_text_border_grey">
+            <Spinner
+                android:id="@+id/spinner_address"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="English"
-                    android:background="@drawable/template_edit_text_border"
-                    android:gravity="center"/>
-
-                <TextView
-                    android:id="@+id/txt_en"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="20dp"
-                    android:text="Hello"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_height="wrap_content"
+                android:layout_height="30dp" />
+            <Spinner
+                android:id="@+id/spinner_price"
                 android:layout_weight="1"
                 android:layout_width="0dp"
-                android:orientation="vertical">
+                android:layout_height="30dp" />
+            <Spinner
+                android:layout_weight="1"
+                android:id="@+id/spinner_view"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="Vietnamese"
-                    android:background="@drawable/template_edit_text_border"
-                    android:gravity="center"/>
-
-                <TextView
-                    android:id="@+id/txt_vn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="20dp"
-                    android:text="Hello"/>
-
-            </LinearLayout>
 
         </LinearLayout>
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler_word_view"
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/contentViewList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="45dp"/>
+            android:layout_height="match_parent">
 
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:weightSum="4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_weight="3"
-                android:layout_width="0dp"
-                android:gravity="center"
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_home_view"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:ignore="Suspicious0dp">
+                />
 
-                <TextView
-                    android:id="@+id/txt_user_2"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:visibility="gone"
-                    android:textSize="12sp"
-                    android:gravity="center"
-                    android:textColor="@color/design_default_color_primary_dark"
-                    android:background="@drawable/custom_circle_grey"
-                    />
-
-            </LinearLayout>
-
-        </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
+
+    <Button
+        android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+        android:id="@+id/btn_new_post"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:text="   Đăng Bài"
+        android:background="@drawable/custom_circle"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <ProgressBar
         android:id="@+id/progressBarHome"
@@ -128,5 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+
 
 </android.support.constraint.ConstraintLayout>

@@ -8,8 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionBarSize">36dip</item>
         <item name="android:textColorSecondary">@color/colorGrey</item>
-        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_green_24dp</item>
-        <item name="android:actionMenuTextColor">@color/colorBlack</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_home_black_24dp</item>
+        <item name="android:actionMenuTextColor">@color/colorBlack</item>Z
         <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
         <item name="android:textAllCaps">false</item>
     </style>
